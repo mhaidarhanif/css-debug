@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hover Cards Component</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="hover-cards component">
+      <div class="on-desktop-block">
+        <!-- Section Header -->
+        <div class="hover-cards-header">
+          <div class="hover-cards-title">Featured Content</div>
+          <div class="divider-line"></div>
+        </div>
+
+        <!-- Cards Grid -->
+        <div class="hover-cards-wrapper">
+          <!-- Card 1 -->
+          <div class="hover-card">
+            <div class="hover-card-image">
+              <img src="images/hovercard-1.png" alt="Card 1 Title" />
+            </div>
+            <div class="hover-card-content">
+              <h4>Pre Title 1</h4>
+              <h2>Card 1 Title</h2>
+              <div class="description-hover">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie
+                  vehicula.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="hover-card">
+            <div class="hover-card-image">
+              <img src="images/hovercard-2.png" alt="Card 2 Title" />
+            </div>
+            <div class="hover-card-content">
+              <h4>Pre Title 2</h4>
+              <h2>Card 2 Title</h2>
+              <div class="description-hover">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie
+                  vehicula.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="hover-card">
+            <div class="hover-card-image">
+              <img src="images/hovercard-3.png" alt="Card 3 Title" />
+            </div>
+            <div class="hover-card-content">
+              <h4>Pre Title 3</h4>
+              <h2>Card 3 Title</h2>
+              <div class="description-hover">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie
+                  vehicula.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="on-mobile-block">
+        <div class="hover-cards-header mobile-only">
+          <div class="hover-cards-title">Featured Content</div>
+          <div class="divider-line-mobile"></div>
+        </div>
+
+        <!-- Mobile View (Accordion) -->
+        <div class="hover-cards-wrapper mobile-only">
+          <div class="accordions">
+            <div
+              class="accordion"
+              style="background-image: url('images/hovercard-1.png')"
+            >
+              <!-- Accordion Header 1 -->
+              <div class="accordion-header">
+                <div class="accordion-overlay">
+                  <div class="accordion-text">
+                    <h4>
+                      <span class="pre-title">Pre Title 1</span>
+                      <span class="title">Card 1 Title</span>
+                    </h4>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Accordion Item 1 -->
+              <div class="accordion-item">
+                <div class="accordion-image"></div>
+                <div class="accordion-content">
+                  <h4>Pre Title 1</h4>
+                  <h3>Card 1 Title</h3>
+                  <div class="description-arccodion">
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Nullam in dui mauris. Vivamus hendrerit arcu sed erat
+                      molestie vehicula.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="accordion"
+              style="background-image: url('images/hovercard-2.png')"
+            >
+              <!-- Accordion Header 2 -->
+              <div class="accordion-header">
+                <div class="accordion-overlay">
+                  <div class="accordion-text">
+                    <h4>
+                      <span class="pre-title">Pre Title 2</span>
+                      <span class="title">Card 2 Title</span>
+                    </h4>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Accordion Item 2 -->
+              <div class="accordion-item">
+                <div class="accordion-image"></div>
+                <div class="accordion-content">
+                  <h4>Pre Title 2</h4>
+                  <h3>Card 2 Title</h3>
+                  <div class="description-arccodion">
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Nullam in dui mauris. Vivamus hendrerit arcu sed erat
+                      molestie vehicula.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="accordion"
+              style="background-image: url('images/hovercard-3.png')"
+            >
+              <!-- Accordion Header 3 -->
+              <div class="accordion-header">
+                <div class="accordion-overlay">
+                  <div class="accordion-text">
+                    <h4>
+                      <span class="pre-title">Pre Title 3</span>
+                      <span class="title">Card 3 Title</span>
+                    </h4>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Accordion Item 3 -->
+              <div class="accordion-item">
+                <div class="accordion-image"></div>
+                <div class="accordion-content">
+                  <h4>Pre Title 3</h4>
+                  <h3>Card 3 Title</h3>
+                  <div class="description-arccodion">
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Nullam in dui mauris. Vivamus hendrerit arcu sed erat
+                      molestie vehicula.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
