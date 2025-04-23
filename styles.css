@@ -184,7 +184,8 @@
     .accordions
     .accordion.expand {
     height: 571px;
-    background-size: 120%;
+    background-size: cover;
+    background-position: left top;
     transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
   }
 
