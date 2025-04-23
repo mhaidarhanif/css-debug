@@ -172,7 +172,7 @@
   .on-mobile-block .hover-cards-wrapper.mobile-only .accordions .accordion {
     height: 84px;
     transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-    background-position: left top;
+    background-position: left -50px;
     background-size: 100%;
     background-repeat: no-repeat;
     position: relative;
