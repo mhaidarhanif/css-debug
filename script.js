@@ -21,14 +21,26 @@ function initAccordion(element) {
 
   headers.forEach((header) => {
     header.addEventListener("click", function () {
-      // Remove active classes from all items
-      items.forEach((item) => item.classList.remove("open"));
-      accordions.forEach((accordion) => accordion.classList.remove("expand"));
-
-      // Add active class to clicked item
       const parentAccordion = this.closest(".accordion");
       const item = parentAccordion.querySelector(".accordion-item");
 
+      // Check if this accordion is already expanded
+      if (parentAccordion.classList.contains("expand")) {
+        return; // Don't collapse the current accordion when clicked
+      }
+
+      // Remove active classes from all items
+      items.forEach((item) => item.classList.remove("open"));
+
+      // Remove expand class from all accordions with a slight delay
+      // to allow fade animation to complete
+      accordions.forEach((accordion) => {
+        if (accordion !== parentAccordion) {
+          accordion.classList.remove("expand");
+        }
+      });
+
+      // Add active class to clicked item
       item.classList.add("open");
       parentAccordion.classList.add("expand");
     });
