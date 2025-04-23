@@ -1,0 +1,159 @@
+<sly data-sly-test="${wcmmode.edit}">
+  <div class="cq-placeholder" data-emptytext="Edit Hover Cards Component"></div>
+</sly>
+
+<sly data-sly-use.model="com.pphg.wcms.core.models.pphg2.HoverCardsModel">
+  <div class="hover-cards component ${wcmmode.edit ? 'is-edit' : 'not-editing'}" analytics-id="57">
+
+    <div class="on-desktop-block">
+
+      <!-- Section Header -->
+      <div class="hover-cards-header">
+        <div class="hover-cards-title">${model.tr_headerTitle @ context='html'}</div>
+        <sly data-sly-test="${model.verticalline}">
+          <div class="divider-line"></div>
+        </sly>
+      </div>
+
+      <!-- Cards Grid -->
+      <div class="hover-cards-wrapper">
+
+        <!-- Card 1 -->
+        <div class="hover-card">
+          <div class="hover-card-image">
+            <img src="${model.image1 @ context='uri'}" alt="${model.tr_title1}">
+          </div>
+          <div class="hover-card-content">
+            <h4>${model.tr_preTitle1}</h4>
+            <h2>${model.tr_title1}</h2>
+            <div class="description-hover">${model.tr_description1 @ context='html'}</div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="hover-card">
+          <div class="hover-card-image">
+            <img src="${model.image2 @ context='uri'}" alt="${model.tr_title2}">
+          </div>
+          <div class="hover-card-content">
+            <h4>${model.tr_preTitle2}</h4>
+            <h2>${model.tr_title2}</h2>
+            <div class="description-hover">${model.tr_description2 @ context='html'}</div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="hover-card">
+          <div class="hover-card-image">
+            <img src="${model.image3 @ context='uri'}" alt="${model.tr_title3}">
+          </div>
+          <div class="hover-card-content">
+            <h4>${model.tr_preTitle3}</h4>
+            <h2>${model.tr_title3}</h2>
+            <div class="description-hover">${model.tr_description3 @ context='html'}</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="on-mobile-block">
+
+
+      <div class="hover-cards-header mobile-only">
+        <div class="hover-cards-title">${model.tr_headerTitle @ context='html'}</div>
+        <sly data-sly-test="${model.verticalline}">
+          <div class="divider-line-mobile"></div>
+        </sly>
+      </div>
+
+      <!-- Mobile View (Accordion) -->
+      <div class="hover-cards-wrapper mobile-only">
+        <div class="accordions">
+
+
+          <div class="accordion" style="background-image: url('${model.image1 @ context = 'styleString'}');">
+
+            <!-- Accordion Header 1 -->
+            <div class="accordion-header">
+              <div class="accordion-overlay">
+                <div class="accordion-text">
+                  <h4>
+                    <span class="pre-title">${model.tr_preTitle1}</span>
+                    <span class="title">${model.tr_title1}</span>
+                  </h4>
+                </div>
+              </div>
+            </div>
+
+            <!-- Accordion Item 1 -->
+            <div class="accordion-item">
+              <div class="accordion-image">
+              </div>
+              <div class="accordion-content">
+                <h4>${model.tr_preTitle1}</h4>
+                <h3>${model.tr_title1}</h3>
+                <div class="description-arccodion">${model.tr_description1 @ context='html'}</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion" style="background-image: url('${model.image2 @ context = 'styleString'}');">
+            <!-- Accordion Item 2 -->
+
+            <div class="accordion-header">
+              <div class="accordion-overlay">
+                <div class="accordion-text">
+                  <h4>
+                    <span class="pre-title">${model.tr_preTitle2}</span>
+                    <span class="title">${model.tr_title2}</span>
+                  </h4>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <div class="accordion-image">
+              </div>
+              <div class="accordion-content">
+                <h4>${model.tr_preTitle2}</h4>
+                <h3>${model.tr_title2}</h3>
+                <div class="description-arccodion">${model.tr_description2 @ context='html'}</div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="accordion" style="background-image: url('${model.image3 @ context = 'styleString'}');">
+
+            <!-- Accordion Item 3 -->
+
+            <div class="accordion-header">
+              <div class="accordion-overlay">
+                <div class="accordion-text">
+                  <h4>
+                    <span class="pre-title">${model.tr_preTitle3}</span>
+                    <span class="title">${model.tr_title3}</span>
+                  </h4>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <div class="accordion-image">
+              </div>
+              <div class="accordion-content">
+                <h4>${model.tr_preTitle3}</h4>
+                <h3>${model.tr_title3}</h3>
+                <div class="description-arccodion">${model.tr_description3 @ context='html'}</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+</sly>
